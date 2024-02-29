@@ -1,0 +1,587 @@
+﻿/* Homepage.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a shadow effect */
+    transition: all 0.3s ease; /* Adding transition for smoother effect */
+}
+
+/* Navbar fixed to the top */
+.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Logo styles */
+.navbar-brand img {
+    margin-left: 80px;
+    max-height: 40px; /* Adjust the height of the logo */
+    margin-right: 20px; /* Adding some margin to the right */
+}
+
+/* Center align the links */
+.navbar-nav {
+    
+    justify-content: center;
+    flex-grow: 1;/* Occupy available space */
+
+}
+.nav-link {
+    color: black;
+}
+    .nav-link:hover {
+       
+        text-decoration: underline;
+        text-decoration-color: #FF6400;
+    }
+    .btn1 {
+        background-color: white;
+        border-radius: 7px;
+        border-color: #FF6400;
+        color: #FF6400;
+        margin-right:30px;
+    }
+    .btn1:hover {
+        background-color: #FF6400;
+        color:white;
+    }
+    .btn2 {
+        background-color: #FF6400;
+        border-radius: 7px;
+        border-color: #FF6400;
+        color: white;
+       
+    }
+    
+    
+
+/* Animation effect on scroll */
+.navbar.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow when scrolled */
+    background-color: #f8f9fa; /* Background color when scrolled */
+}
+
+/* Any additional styles or modifications can be added below */
+
+/* Example animation on scroll */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar.animated {
+    animation: fadeInDown 0.5s ease;
+}
+
+/*Hero section*/
+.text-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-top:150px;
+    
+}
+.text-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.changing-text {
+    color: #FF6400; font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+/* icon.css */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+    .image-container img {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+.Hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.text-section {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    animation: moveLeftRight 2s ease-in-out infinite alternate;
+}
+
+.image-section {
+    width: 40%;
+    animation: moveRightLeft 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px); /* Adjust the distance for the movement */
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-20px); /* Adjust the distance for the movement */
+    }
+}
+
+.image-section img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .image-section img:hover {
+        transform: scale(1.1);
+    }
+
+
+.subtext-section {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+
+.subimage-section {
+    width: 40%;
+   
+}
+.subimage-section img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .subimage-section img:hover {
+        transform: scale(1.1);
+    }
+
+    /*rectangular-section*/
+
+.containerR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+    .containerR .box {
+        height: 300px; /* Set your desired height */
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        color: white;
+    }
+
+.left-radius {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #FF6400; /* Change color as needed */
+    width: 550px; /* Set your desired width */
+    flex-direction:column;
+   
+
+}
+.button-white {
+    background-color: white;
+    border-radius: 7px;
+    border-color: #FF6400;
+    color: #FF6400;
+   
+}
+
+.right-radius {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #F98B43; /* Change color as needed */
+    width: 350px; /* Set your desired width, smaller than the first div */
+    flex-direction: column;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+    .box-container img {
+        width: 25px;
+        height: 25px;
+        margin:5px;        
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .box-container img:hover {
+            transform: scale(1.1);
+        }
+    .box-container p{
+        margin:5px;
+    }
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+    .column img {
+        width: 40px; /* Set your desired image width */
+        height: auto;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+.footer{
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.line{
+    width:60%;
+    height: 1px;
+    margin-top: 120px;
+   
+}
+.line1 {
+    width: 45%;
+    height: 1px;
+    margin-top: 120px;
+}
+/*Login page .css*/
+.Login-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    padding: 400px;
+    width: 100%;
+}
+
+.box {
+    height: 450px; /* Set your desired height */
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+   
+     
+}
+
+.left {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #FFFFFF; /* Change color as needed */
+    
+    flex-direction:column;
+    color:black;
+}
+.Left h3 {
+    margin-left:20px;
+}
+.right {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #E3E7F5; /* Change color as needed */
+   /* Set your desired width, smaller than the first div */
+    flex-direction: column;
+}
+    .right img {
+        width: 200px;
+        height: auto;
+       
+    
+}
+.background-div {
+    background-color: #F1F1FF;
+    width: 100%;
+    height:fit-content;
+}
+
+/* Style for the form group */
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* Style for the input field */
+.form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Style for the eye icon */
+.Login-container span {
+    position: absolute;
+    top: 80%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+   
+
+    span {
+        position: absolute;
+        top: 12%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #aaa;
+    }
+
+    /* Style for the eye icon when hovered */
+    span:hover {
+        color: #333;
+    }
+/* Styles for the Download.css card container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Styles for the individual cards */
+.card {
+    align-items: center;
+    width: calc(33.33% - 40px);
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+    /* Card heading styles */
+    .card h3 {
+        color: black;
+        text-align:center;
+    }
+
+    /* Card paragraph styles */
+    .card p {
+        color: black;
+        text-align: center;
+    }
+
+    /* Card hover effect */
+    .card:hover {
+        
+        transform: translateY(-5px);
+    }
+.container {
+    text-align: center;
+    
+    
+}
+
+.nav-pills {
+    justify-content:center;
+   
+}
+
+.tab-content {
+    margin-top: 20px;
+    text-align: left; /* Align content text to the left */
+}
+.btn3 {
+    background-color: #FF6400;
+    border-radius: 20px;
+    border-color: #FF6400;
+    color: white;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:200px;
+}
+    .btn3:hover {
+        background-color: white;
+        border-radius: 20px;
+        border-color: #FF6400;
+        color: #FF6400;
+    }
+.verifycard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color for the entire screen */
+}
+
+.verifycard {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff; /* Background color for the card */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+    text-align: center;
+}
+
+.verification-input {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    .verification-input:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    .verification-input + .verification-input {
+        margin-left: 10px; /* Add gap between verification code inputs */
+    }
+    /* FAQ*/
+
+
+.faq-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 90px;
+}
+
+.heading {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.faq-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-questions {
+    flex: 1;
+    overflow-y: auto; /* Enable scroll if content exceeds height */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+    .faq-question.active {
+        background-color: #e0e0e0;
+    }
+
+.faq-answer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Navbar adjustments */
+    .navbar-brand img {
+        margin-left: 20px; /* Adjust the margin for the logo */
+    }
+
+    /* Hero section adjustments */
+
+    .background-div {
+        background-color: #F1F1FF;
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    /* Card adjustments */
+    .card-container {
+        flex-direction: column; /* Display cards in a column for small screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .card {
+        width: 100%; /* Full width for cards */
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+    .line {
+        width: 40%;
+        height: 1px;
+        margin-top: 120px;
+    }
+
+    .line1 {
+        width: 15%;
+        height: 1px;
+        margin-top: 120px;
+    }
+    
+}
+
